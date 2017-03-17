@@ -82,11 +82,10 @@ class Home extends CI_Controller {
 	}
 
 	/**
-	 * Display the home page.
+	 * Display the product page.
 	 *
 	 * @return Response
-	 */
-	 
+	 */	
 	public function product($site = NULL, $productId = NULL, $upc)
 	{
 		if(empty($site))

@@ -39,24 +39,26 @@
 				<?php 
 				if ($totalRecords>0):
 					foreach($product_list as $product): ?>
-						<div class="category-item col-lg-3 col-md-4 col-xs-6">
-							<a href="<?php echo base_url().'product'.'/'.$product->catalogId; ?>">
-								<img class="icon-category" src="<?php echo $product->image_url; ?>" />
-								<h2 class="header-category"><?php echo $product->brand; ?></h2>
-							</a>	
-						</div>
-					<?php 
-					endforeach; 
+
+				<div class="category-item col-lg-3 col-md-4 col-xs-6">
+					<a href="<?php echo base_url().'product'.'/'.$product->catalogId; ?>">
+						<img class="icon-category" src="<?php echo $product->image_url; ?>" />
+						<h2 class="header-category"><?php echo $product->brand; ?></h2>
+					</a>	
+				</div>
+
+				<?php 
+				endforeach; 
 				else:
 					?>
-					<h2 class="text-center">There are no result</h2>
+
+				<h2 class="text-center">There are no result</h2>
 				<?php 
 				endif;
 				?>
 			</div>
 		</div>
-	</div>				
-
+	</div>	
 </div>
 
 <?php $this->load->view('template/footer'); ?>
